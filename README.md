@@ -1,7 +1,7 @@
 # paracasei-SC72564
 de novo assembly of the *L. paracasei* strain SC72564\
 this contains the raw data for the de novo assembly of the aforementioned microbe for your perusal\
-fna, ffn, faa, tsv csv containing every NA, AA, and protein sequence included\
+fna, ffn, faa, tsv, csv files are all uploaded unless stated otherwise within each README\
 blast hits from ncbi are also included\
 raw data from the following tools are all included:
 >PlasmidFinder v 2.1.6 (Database: plasmidfinder_db v 2.2.0 , Nov. 2024 release)\
