@@ -18,7 +18,7 @@ raw data from the following tools are all included:
 >antiSMASH version 8.0.4\
 >gutSMASH version 2.0.1\\
 >
-files from Trimmomatic  will **NOT** be uplaoded\
+files from Trimmomatic  will **NOT** be uploaded
 as it is too large, compressed or otherwise
 
 
