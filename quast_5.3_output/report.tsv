@@ -1,0 +1,22 @@
+Assembly	isolate_filtered	careful_filtered
+# contigs (>= 0 bp)	41	42
+# contigs (>= 1000 bp)	21	21
+# contigs (>= 5000 bp)	17	17
+# contigs (>= 10000 bp)	17	17
+# contigs (>= 25000 bp)	15	15
+# contigs (>= 50000 bp)	12	12
+Total length (>= 0 bp)	3063674	3063974
+Total length (>= 1000 bp)	3056619	3056245
+Total length (>= 5000 bp)	3043231	3043076
+Total length (>= 10000 bp)	3043231	3043076
+Total length (>= 25000 bp)	3010361	3010206
+Total length (>= 50000 bp)	2894023	2893868
+# contigs	23	24
+Largest contig	651596	651721
+Total length	3057896	3058071
+GC (%)	46.12	46.12
+N50	404174	403891
+N75	211744	211744
+L50	3	3
+L75	6	6
+# N's per 100 kbp	19.62	18.93
