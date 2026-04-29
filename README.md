@@ -16,4 +16,4 @@ RGI v6.0.3 (Database: CARD Variants v4.0.2, Nov. 2023 release)\
 PlasmidHunter v 1.4.5 (Database: May. 2024 release)\
 mummer2circos v1.4.2 & Circos v0.69-8\
 antiSMASH version 8.0.4\
-gutSMASH version 2.0.1\
+gutSMASH version 2.0.1
