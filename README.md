@@ -18,5 +18,7 @@ raw data from the following tools are all included:
 >antiSMASH version 8.0.4\
 >gutSMASH version 2.0.1\\
 >
-files from Trimmomatic will **not** be uplaoded\
-as it exceeds the upload limit on github when accessed via web broswer
+files from Trimmomatic  will **NOT** be uplaoded\
+as it will exceed, compressed or otherwise, the upload limit\
+on github when accessed via web broswer\
+
