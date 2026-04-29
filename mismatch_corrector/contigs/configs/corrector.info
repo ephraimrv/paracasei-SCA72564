@@ -1,7 +1,0 @@
-"bwa": "/home/ephraim/miniconda3/envs/spades/bin/spades-bwa"
-"dataset": "/home/ephraim/spades_careful_output/input_dataset.yaml"
-"log_filename": "log.properties"
-"max_nthreads": !!int "16"
-"output_dir": "/home/ephraim/spades_careful_output/mismatch_corrector/contigs"
-"strategy": "mapped_squared"
-"work_dir": "/home/ephraim/spades_careful_output/tmp/corrector_pd2sdnj4"
