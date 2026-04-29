@@ -1,0 +1,36 @@
+Ø	---
+max read length: 151
+nomerge max read length: 151
+average read length: 136.219
+average coverage: 156.262
+libraries:
+  - type:            paired-end
+    number:          1
+    orientation:     fr
+    left reads:
+      - '/home/ephraim/trimmomatic_output/trimmed_R1_paired.fastq.gz'
+    right reads:
+      - '/home/ephraim/trimmomatic_output/trimmed_R2_paired.fastq.gz'
+    data:
+      unmerged read length: 151
+      merged read length: 0
+      insert size mean: 0
+      insert size deviation: 0
+      insert size left quantile: 0
+      insert size right quantile: 0
+      insert size median: 0
+      insert size mad: 0
+      insert size distribution: {  }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/home/ephraim/spades_isolate_output/.bin_reads/INFO_0'
+        paired read prefix: '/home/ephraim/spades_isolate_output/.bin_reads/paired_0'
+        merged read prefix: '/home/ephraim/spades_isolate_output/.bin_reads/merged_0'
+        single read prefix: '/home/ephraim/spades_isolate_output/.bin_reads/single_0'
+        chunk num:       12
+      single reads mapped: false
+      library index:   0
+      number of reads: 6126088
+      total nucleotides: 834489500
+...
