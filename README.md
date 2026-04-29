@@ -19,6 +19,6 @@ raw data from the following tools are all included:
 >gutSMASH version 2.0.1\\
 >
 files from Trimmomatic  will **NOT** be uplaoded\
-as it will exceed, compressed or otherwise, the upload limit\
-on github when accessed via web broswer\
+as it is too large, compressed or otherwise
+
 
