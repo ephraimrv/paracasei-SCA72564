@@ -1,0 +1,7 @@
+- "left reads":
+  - "/home/ephraim/trimmomatic_output/trimmed_R1_paired.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/home/ephraim/trimmomatic_output/trimmed_R2_paired.fastq.gz"
+  "type": "paired-end"

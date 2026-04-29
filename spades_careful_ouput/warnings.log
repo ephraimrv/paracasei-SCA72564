@@ -1,0 +1,4 @@
+
+=== Error correction and assembling warnings:
+ * 0:01:06.877    46M / 4195M WARN    General                 (launcher.cpp              : 181)   Your data seems to have high uniform coverage depth. It is strongly recommended to use --isolate option.
+======= Warnings saved to /home/ephraim/spades_careful_output/warnings.log

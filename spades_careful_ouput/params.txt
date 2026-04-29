@@ -1,0 +1,38 @@
+Command line: /home/ephraim/miniconda3/envs/spades/bin/spades.py	--careful	-1	/home/ephraim/trimmomatic_output/trimmed_R1_paired.fastq.gz	-2	/home/ephraim/trimmomatic_output/trimmed_R2_paired.fastq.gz	-o	/home/ephraim/spades_careful_output	
+
+System information:
+  SPAdes version: 4.2.0
+  Python version: 3.14.2
+  OS: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+
+Output dir: /home/ephraim/spades_careful_output
+Mode: read error correction and assembling
+Debug mode is turned OFF
+
+Dataset parameters:
+  Standard mode
+  For multi-cell/isolate data we recommend to use '--isolate' option; for single-cell MDA data use '--sc'; for metagenomic data use '--meta'; for RNA-Seq use '--rna'.
+  Reads:
+    Library number: 1, library type: paired-end
+      orientation: fr
+      left reads: ['/home/ephraim/trimmomatic_output/trimmed_R1_paired.fastq.gz']
+      right reads: ['/home/ephraim/trimmomatic_output/trimmed_R2_paired.fastq.gz']
+      interlaced reads: not specified
+      single reads: not specified
+      merged reads: not specified
+Read error correction parameters:
+  Iterations: 1
+  PHRED offset will be auto-detected
+  Corrected reads will be compressed
+Assembly parameters:
+  k: automatic selection based on read length
+  Repeat resolution is enabled
+  Mismatch careful mode is turned ON
+  MismatchCorrector will be used
+  Coverage cutoff is turned OFF
+  Assembly graph output will use GFA v1.2 format
+Other parameters:
+  Dir for temp files: /home/ephraim/spades_careful_output/tmp
+  Threads: 16
+  Memory limit (in Gb): 11
+

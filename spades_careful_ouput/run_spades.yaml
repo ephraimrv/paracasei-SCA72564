@@ -1,0 +1,240 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Before_start_KEJWATC3IS5KBROD2PC3XD1FVAZHRRGX
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_NM143Z8ZZMG6W52GS25FF4ERKOZJZKCX
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /home/ephraim/spades_careful_output/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_jtnuphyn
+  job_uuid: SPAdes_Read_error_correction_HTUAOGSF0GPWPOGT8EW3HY261KKRQU33
+  mpi_support: false
+  output_files:
+  - /home/ephraim/spades_careful_output/corrected/corrected.yaml
+  path: /home/ephraim/miniconda3/envs/spades/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /home/ephraim/miniconda3/envs/spades/share/spades/spades_pipeline/scripts/compress_all.py
+  - --input_file
+  - /home/ephraim/spades_careful_output/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /home/ephraim/miniconda3/envs/spades/share/spades
+  - --max_threads
+  - '16'
+  - --output_dir
+  - /home/ephraim/spades_careful_output/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_corrected_reads_compression_2P7GVBYKJNJGDHRXJA08HDA119OP5PFY
+  mpi_support: false
+  output_files: []
+  path: /home/ephraim/miniconda3/envs/spades/bin/python3
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Read_error_correction_915FCFPT33HLXIXDB5VV6IV62MRUU4RP
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_E8YKKZ1OUWN6A7EV9YYY5BO9EQKLTLAC
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /home/ephraim/spades_careful_output/K21/configs/config.info
+  - /home/ephraim/spades_careful_output/K21/configs/careful_mode.info
+  config_dir: K21
+  del_after: []
+  job_uuid: hpcSPAdes_K21_RGK1OR6PROS25ICEY60UWIUEERS3XP9Z
+  mpi_support: true
+  output_files: []
+  path: /home/ephraim/miniconda3/envs/spades/bin/{spades_core}
+  short_name: k21
+- STAGE: K33
+  args:
+  - /home/ephraim/spades_careful_output/K33/configs/config.info
+  - /home/ephraim/spades_careful_output/K33/configs/careful_mode.info
+  config_dir: K33
+  del_after: []
+  job_uuid: hpcSPAdes_K33_755LHTI6QO1VTE4Z515M4PC3SXDCR5RO
+  mpi_support: true
+  output_files: []
+  path: /home/ephraim/miniconda3/envs/spades/bin/{spades_core}
+  short_name: k33
+- STAGE: K55
+  args:
+  - /home/ephraim/spades_careful_output/K55/configs/config.info
+  - /home/ephraim/spades_careful_output/K55/configs/careful_mode.info
+  config_dir: K55
+  del_after: []
+  job_uuid: hpcSPAdes_K55_DYWY7VS7SEQMKLAKRHJT7KKT3UXHJK69
+  mpi_support: true
+  output_files: []
+  path: /home/ephraim/miniconda3/envs/spades/bin/{spades_core}
+  short_name: k55
+- STAGE: K77
+  args:
+  - /home/ephraim/spades_careful_output/K77/configs/config.info
+  - /home/ephraim/spades_careful_output/K77/configs/careful_mode.info
+  config_dir: K77
+  del_after: []
+  job_uuid: hpcSPAdes_K77_BRT7GEFO5STBP2HFXQWZ8FWGE6NKFAET
+  mpi_support: true
+  output_files: []
+  path: /home/ephraim/miniconda3/envs/spades/bin/{spades_core}
+  short_name: k77
+- STAGE: Copy files
+  args:
+  - /home/ephraim/miniconda3/envs/spades/share/spades/spades_pipeline/scripts/copy_files.py
+  - /home/ephraim/spades_careful_output/K77/before_rr.fasta
+  - /home/ephraim/spades_careful_output/before_rr.fasta
+  - /home/ephraim/spades_careful_output/K77/assembly_graph_after_simplification.gfa
+  - /home/ephraim/spades_careful_output/assembly_graph_after_simplification.gfa
+  - /home/ephraim/spades_careful_output/K77/final_contigs.fasta
+  - /home/ephraim/spades_careful_output/contigs.fasta
+  - /home/ephraim/spades_careful_output/K77/first_pe_contigs.fasta
+  - /home/ephraim/spades_careful_output/first_pe_contigs.fasta
+  - /home/ephraim/spades_careful_output/K77/strain_graph.gfa
+  - /home/ephraim/spades_careful_output/strain_graph.gfa
+  - /home/ephraim/spades_careful_output/K77/scaffolds.fasta
+  - /home/ephraim/spades_careful_output/scaffolds.fasta
+  - /home/ephraim/spades_careful_output/K77/scaffolds.paths
+  - /home/ephraim/spades_careful_output/scaffolds.paths
+  - /home/ephraim/spades_careful_output/K77/assembly_graph_with_scaffolds.gfa
+  - /home/ephraim/spades_careful_output/assembly_graph_with_scaffolds.gfa
+  - /home/ephraim/spades_careful_output/K77/assembly_graph.fastg
+  - /home/ephraim/spades_careful_output/assembly_graph.fastg
+  - /home/ephraim/spades_careful_output/K77/final_contigs.paths
+  - /home/ephraim/spades_careful_output/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_gyouq5ya
+  job_uuid: SPAdes_Copy_files_XI2T59YRSD58ENH1001Q8217Q7TXC9AN
+  mpi_support: false
+  output_files: []
+  path: /home/ephraim/miniconda3/envs/spades/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Assembling_VWPCXCNKY2UASDN2728F1US9P215F7BX
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Mismatch correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Mismatch_correction_E3GDWU3EULUS0LIG02GP6MA3F52P02QT
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: mc_start
+- STAGE: Mismatch correction contigs
+  args:
+  - /home/ephraim/miniconda3/envs/spades/share/spades/spades_pipeline/scripts/correction_iteration_script.py
+  - --corrected
+  - /home/ephraim/spades_careful_output/contigs.fasta
+  - --assembled
+  - /home/ephraim/spades_careful_output/misc/assembled_contigs.fasta
+  - --assembly_type
+  - contigs
+  - --output_dir
+  - /home/ephraim/spades_careful_output
+  - --bin_home
+  - /home/ephraim/miniconda3/envs/spades/bin
+  config_dir: mismatch_corrector/contigs
+  del_after:
+  - mismatch_corrector/contigs/tmp
+  - tmp/corrector_pd2sdnj4
+  job_uuid: SPAdes_Mismatch_correction_contigs_GJGGJNTC3FQWR090M72I9REU0X0OE7WE
+  mpi_support: false
+  output_files: []
+  path: /home/ephraim/miniconda3/envs/spades/bin/python3
+  short_name: mc_contigs
+- STAGE: Mismatch correction scaffolds
+  args:
+  - /home/ephraim/miniconda3/envs/spades/share/spades/spades_pipeline/scripts/correction_iteration_script.py
+  - --corrected
+  - /home/ephraim/spades_careful_output/scaffolds.fasta
+  - --assembled
+  - /home/ephraim/spades_careful_output/misc/assembled_scaffolds.fasta
+  - --assembly_type
+  - scaffolds
+  - --output_dir
+  - /home/ephraim/spades_careful_output
+  - --bin_home
+  - /home/ephraim/miniconda3/envs/spades/bin
+  config_dir: mismatch_corrector/scaffolds
+  del_after:
+  - mismatch_corrector/scaffolds/tmp
+  - tmp/corrector_4vk4o7fr
+  job_uuid: SPAdes_Mismatch_correction_scaffolds_K3NRMJJAOE2NUKFN3EOVZRKLUB4SIAHF
+  mpi_support: false
+  output_files: []
+  path: /home/ephraim/miniconda3/envs/spades/bin/python3
+  short_name: mc_scaffolds
+- STAGE: Mismatch correction
+  args: []
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Mismatch_correction_T7BJAYR7UR25EWF9HQ6P0K00D0NRS2K8
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: mc_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /home/ephraim/miniconda3/envs/spades/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /home/ephraim/spades_careful_output/scaffolds.fasta
+  - --misc_dir
+  - /home/ephraim/spades_careful_output/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  job_uuid: SPAdes_Breaking_scaffolds_MRTEDSQ9UEFPH3HSO0D4DOJV4RYW6TIL
+  mpi_support: false
+  output_files: []
+  path: /home/ephraim/miniconda3/envs/spades/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  job_uuid: SPAdes_Terminate_A47FV5NMSX1F9CK7YMO5J3XYJTS1D1PM
+  mpi_support: false
+  output_files: []
+  path: 'true'
+  short_name: terminate
