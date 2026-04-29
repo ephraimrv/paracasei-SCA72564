@@ -3,8 +3,8 @@ de novo assembly of the *L. paracasei* strain SC72564\
 this contains the raw data for the de novo assembly of the aforementioned microbe for your perusal\
 fna, ffn, faa, tsv csv containing every NA, AA, and protein sequence included\
 blast hits from ncbi are also included\
-raw data from the following tools are all included:\
-PlasmidFinder v 2.1.6 (Database: plasmidfinder_db v 2.2.0 , Nov. 2024 release)\
+raw data from the following tools are all included:
+>PlasmidFinder v 2.1.6 (Database: plasmidfinder_db v 2.2.0 , Nov. 2024 release)\
 >Phigaro v2.4.0 (Database: Jan. 2024 release)\
 >ISEScan v1.7.2.3 (Database: Apr. 2021 release)\
 >PlasmidFinder v 2.1.6 (Database: plasmidfinder_db v 2.2.0 , Nov. 2024 release)\
