@@ -1,4 +1,4 @@
-# paracasei-SC72564
+# paracasei-SCA72564
 de novo assembly of the *L. paracasei* strain SC72564\
 this contains the raw data for the de novo assembly of the aforementioned microbe for your perusal\
 fna, ffn, faa, tsv, csv files are all uploaded unless stated otherwise within each README\
