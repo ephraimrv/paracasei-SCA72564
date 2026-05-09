@@ -1,4 +1,4 @@
-# paracasei-SCA72564
+# *paracasei*-SCA72564
 de novo assembly of the *L. paracasei* strain SCA72564\
 this contains the raw data for the de novo assembly of the aforementioned microbe for your perusal\
 fna, ffn, faa, tsv, csv files are all uploaded unless stated otherwise within each README\
@@ -18,7 +18,6 @@ raw data from the following tools are all included:
 >antiSMASH version 8.0.4\
 >gutSMASH version 2.0.1\
 >
-files from Trimmomatic  will **NOT** be uploaded
-as it is too large, compressed or otherwise
-
+files from Trimmomatic  will **NOT** be uploaded as it is too large, nor will I bother cloning this repository just for the sake of uploading it.\
+You may replicate the Trimmomatic results by accessing the raw reads with accession number SRR35991900.
 
