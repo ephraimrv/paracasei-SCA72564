@@ -1,0 +1,15 @@
+#                                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_2_length_515833_cov_109.460731:109995-112439|+ -            815 76341                -            799         0 1402.1   6.4   1   1         0         0 1401.8   6.4     2   796     3   807     2   810 0.98 NODE_2_length_515833_cov_109.460731_99 # 109995 # 112439 # 1 # ID=2_99;partial=00;start_type=TTG;rbs_motif=AGGA/GGAG/GAGG;rbs_spacer=11-12bp;gc_cont=0.489
+NODE_1_length_651596_cov_115.359902:235386-238007|- -            874 76341                -            799  1.9e-238  791.1  11.0   1   1    2e-240  2.9e-237  787.2  11.1     2   795     7   807     6   811 0.95 NODE_1_length_651596_cov_115.359902_236 # 235386 # 238007 # -1 # ID=1_236;partial=00;start_type=ATG;rbs_motif=AGGAG/GGAGG;rbs_spacer=11-12bp;gc_cont=0.487
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/76341at33958.hmm
+# Target file:     /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/ephraim/busco_isolate_may/run_lactobacillaceae_odb12/hmmer_output/76341at33958.out --cpu 1 /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/76341at33958.hmm /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/ephraim
+# Date:            Sun May  3 19:13:24 2026
+# [ok]

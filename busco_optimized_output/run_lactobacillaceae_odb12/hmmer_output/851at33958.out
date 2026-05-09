@@ -1,0 +1,15 @@
+#                                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_2_length_515833_cov_109.460731:327138-327443|- -            102 851                  -             99   1.1e-41  138.4   0.4   1   1   8.5e-45   1.2e-41  138.3   0.4     1    98     3   100     3   101 0.98 NODE_2_length_515833_cov_109.460731_288 # 327138 # 327443 # -1 # ID=2_288;partial=00;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.474
+NODE_2_length_515833_cov_109.460731:154366-157548|- -           1061 851                  -             99     0.022   12.4   0.1   1   1   7.4e-05      0.11   10.2   0.1    17    49   985  1017   972  1042 0.72 NODE_2_length_515833_cov_109.460731_140 # 154366 # 157548 # -1 # ID=2_140;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.479
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/851at33958.hmm
+# Target file:     /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/ephraim/busco_isolate_may/run_lactobacillaceae_odb12/hmmer_output/851at33958.out --cpu 1 /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/851at33958.hmm /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/ephraim
+# Date:            Sun May  3 19:13:23 2026
+# [ok]

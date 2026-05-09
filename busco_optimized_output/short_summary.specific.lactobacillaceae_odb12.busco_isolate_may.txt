@@ -1,0 +1,29 @@
+# BUSCO version is: 6.0.0 
+# The lineage dataset is: lactobacillaceae_odb12 (Creation date: 2025-05-14, number of genomes: 100, number of BUSCOs: 519)
+# Summarized benchmarking in BUSCO notation for file /home/ephraim/isolate_filtered_may.fasta
+# BUSCO was run in mode: prok_genome_prod
+# Gene predictor used: prodigal
+
+	***** Results: *****
+
+	C:99.0%[S:97.9%,D:1.2%],F:0.0%,M:1.0%,n:519	   
+	514	Complete BUSCOs (C)			   
+	508	Complete and single-copy BUSCOs (S)	   
+	6	Complete and duplicated BUSCOs (D)	   
+	0	Fragmented BUSCOs (F)			   
+	5	Missing BUSCOs (M)			   
+	519	Total BUSCO groups searched		   
+
+Assembly Statistics:
+	41	Number of scaffolds
+	47	Number of contigs
+	3064037	Total length
+	0.020%	Percent gaps
+	404 kbp	Scaffold N50
+	284 kbp	Contigs N50
+
+
+Dependencies and versions:
+	hmmsearch: 3.4
+	bbtools: None
+	prodigal: 2.6.3

@@ -1,0 +1,17 @@
+#                                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_5_length_328887_cov_107.457170:254174-255229|- -            352 1646                 -            334  1.8e-168  557.5   1.0   1   1  2.8e-171    2e-168  557.3   1.0     2   334     3   340     2   340 0.98 NODE_5_length_328887_cov_107.457170_244 # 254174 # 255229 # -1 # ID=5_244;partial=00;start_type=GTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.487
+NODE_4_length_348303_cov_114.329901:320549-321724|- -            392 1646                 -            334   0.00047   16.9   0.1   1   1   9.9e-07   0.00071   16.3   0.1     3   135     3   152     1   157 0.70 NODE_4_length_348303_cov_114.329901_289 # 320549 # 321724 # -1 # ID=4_289;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.401
+NODE_1_length_651596_cov_115.359902:282816-283673|+ -            286 1646                 -            334    0.0069   13.1   0.0   1   1     2e-05     0.015   12.0   0.0     3    65     2    65     1    75 0.83 NODE_1_length_651596_cov_115.359902_273 # 282816 # 283673 # 1 # ID=1_273;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.487
+NODE_2_length_515833_cov_109.460731:475882-477300|- -            473 1646                 -            334     0.025   11.3   0.0   1   1   6.5e-05     0.047   10.3   0.0     3    63     5    65     3   126 0.82 NODE_2_length_515833_cov_109.460731_452 # 475882 # 477300 # -1 # ID=2_452;partial=00;start_type=ATG;rbs_motif=AGGAGG;rbs_spacer=5-10bp;gc_cont=0.476
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/1646at33958.hmm
+# Target file:     /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/ephraim/busco_isolate_may/run_lactobacillaceae_odb12/hmmer_output/1646at33958.out --cpu 1 /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/1646at33958.hmm /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/ephraim
+# Date:            Sun May  3 19:13:17 2026
+# [ok]

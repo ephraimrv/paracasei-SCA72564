@@ -1,0 +1,21 @@
+#                                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_2_length_515833_cov_109.460731:61878-65174|+   -           1099 1770                 -           1077         0 1525.6   0.0   1   1         0         0 1525.4   0.0     2  1077     3  1093     2  1093 0.95 NODE_2_length_515833_cov_109.460731_54 # 61878 # 65174 # 1 # ID=2_54;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.472
+NODE_2_length_515833_cov_109.460731:329749-334083|- -           1445 1770                 -           1077   2.7e-29   99.2  12.7   1   7      0.41     6e+02   -4.6   2.2   878   967   184   245   128   319 0.51 NODE_2_length_515833_cov_109.460731_292 # 329749 # 334083 # -1 # ID=2_292;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.466
+NODE_2_length_515833_cov_109.460731:329749-334083|- -           1445 1770                 -           1077   2.7e-29   99.2  12.7   2   7   1.6e-08   2.4e-05   19.9   0.0     3    72   334   403   332   414 0.91 NODE_2_length_515833_cov_109.460731_292 # 329749 # 334083 # -1 # ID=2_292;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.466
+NODE_2_length_515833_cov_109.460731:329749-334083|- -           1445 1770                 -           1077   2.7e-29   99.2  12.7   3   7   4.1e-12   5.9e-09   31.8   0.0    73   350   612   907   581   911 0.75 NODE_2_length_515833_cov_109.460731_292 # 329749 # 334083 # -1 # ID=2_292;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.466
+NODE_2_length_515833_cov_109.460731:329749-334083|- -           1445 1770                 -           1077   2.7e-29   99.2  12.7   4   7     8e-05      0.12    7.7   0.0   354   409   952  1007   949  1022 0.93 NODE_2_length_515833_cov_109.460731_292 # 329749 # 334083 # -1 # ID=2_292;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.466
+NODE_2_length_515833_cov_109.460731:329749-334083|- -           1445 1770                 -           1077   2.7e-29   99.2  12.7   5   7   7.1e-06      0.01   11.2   0.0   470   571  1035  1136  1020  1179 0.66 NODE_2_length_515833_cov_109.460731_292 # 329749 # 334083 # -1 # ID=2_292;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.466
+NODE_2_length_515833_cov_109.460731:329749-334083|- -           1445 1770                 -           1077   2.7e-29   99.2  12.7   6   7   2.7e-08   3.8e-05   19.2   3.0   708   747  1263  1302  1248  1344 0.79 NODE_2_length_515833_cov_109.460731_292 # 329749 # 334083 # -1 # ID=2_292;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.466
+NODE_2_length_515833_cov_109.460731:329749-334083|- -           1445 1770                 -           1077   2.7e-29   99.2  12.7   7   7   2.1e-05     0.031    9.6   0.0   757   825  1345  1415  1328  1439 0.77 NODE_2_length_515833_cov_109.460731_292 # 329749 # 334083 # -1 # ID=2_292;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.466
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/1770at33958.hmm
+# Target file:     /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/ephraim/busco_isolate_may/run_lactobacillaceae_odb12/hmmer_output/1770at33958.out --cpu 1 /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/1770at33958.hmm /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/ephraim
+# Date:            Sun May  3 19:13:18 2026
+# [ok]

@@ -1,0 +1,18 @@
+#                                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_11_length_60639_cov_107.161487:54554-54973|-   -            140 3209                 -            130   7.3e-49  162.3   0.2   1   1   8.9e-52   8.6e-49  162.0   0.2     2   128     2   130     1   138 0.77 NODE_11_length_60639_cov_107.161487_53 # 54554 # 54973 # -1 # ID=11_53;partial=00;start_type=TTG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.474
+NODE_12_length_50619_cov_110.658937:13334-14797|+   -            488 3209                 -            130     0.094    9.9   0.0   1   2   9.7e-05     0.094    9.9   0.0    72   116    90   135    87   145 0.55 NODE_12_length_50619_cov_110.658937_15 # 13334 # 14797 # 1 # ID=12_15;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.523
+NODE_12_length_50619_cov_110.658937:13334-14797|+   -            488 3209                 -            130     0.094    9.9   0.0   2   2         3   2.9e+03  -15.5  21.0    80    88   303   311   212   351 0.67 NODE_12_length_50619_cov_110.658937_15 # 13334 # 14797 # 1 # ID=12_15;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.523
+NODE_3_length_404174_cov_108.718135:350997-351956|- -            320 3209                 -            130       1.1    6.4  11.5   1   2     0.012        11    3.1   0.1     9    33    11    35     4    48 0.80 NODE_3_length_404174_cov_108.718135_329 # 350997 # 351956 # -1 # ID=3_329;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.481
+NODE_3_length_404174_cov_108.718135:350997-351956|- -            320 3209                 -            130       1.1    6.4  11.5   2   2    0.0027       2.6    5.2   6.2    24   121   108   207   102   220 0.64 NODE_3_length_404174_cov_108.718135_329 # 350997 # 351956 # -1 # ID=3_329;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.481
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/3209at33958.hmm
+# Target file:     /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/ephraim/busco_isolate_may/run_lactobacillaceae_odb12/hmmer_output/3209at33958.out --cpu 1 /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/3209at33958.hmm /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/ephraim
+# Date:            Sun May  3 19:13:21 2026
+# [ok]

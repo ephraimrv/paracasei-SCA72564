@@ -1,0 +1,16 @@
+#                                                                                                           --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name                                       accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#                               ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NODE_4_length_348303_cov_114.329901:22127-23794|-   -            556 697                  -            537         0 1017.7   1.1   1   1         0         0 1017.5   1.1     2   537     4   542     3   542 0.99 NODE_4_length_348303_cov_114.329901_25 # 22127 # 23794 # -1 # ID=4_25;partial=00;start_type=TTG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.467
+NODE_1_length_651596_cov_115.359902:287810-288988|+ -            393 697                  -            537     1e-17   61.4   5.2   1   2    0.0013       1.9    4.4   0.2   133   186    64   115    47   125 0.81 NODE_1_length_651596_cov_115.359902_277 # 287810 # 288988 # 1 # ID=1_277;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.499
+NODE_1_length_651596_cov_115.359902:287810-288988|+ -            393 697                  -            537     1e-17   61.4   5.2   2   2   3.5e-19   5.1e-16   55.7   1.2   250   513   155   382   133   391 0.80 NODE_1_length_651596_cov_115.359902_277 # 287810 # 288988 # 1 # ID=1_277;partial=00;start_type=ATG;rbs_motif=AGxAGG/AGGxGG;rbs_spacer=5-10bp;gc_cont=0.499
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/697at33958.hmm
+# Target file:     /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa
+# Option settings: hmmsearch --domtblout /home/ephraim/busco_isolate_may/run_lactobacillaceae_odb12/hmmer_output/697at33958.out --cpu 1 /home/ephraim/busco_downloads/lineages/lactobacillaceae_odb12/hmms/697at33958.hmm /home/ephraim/busco_isolate_may/prodigal_output/predicted_genes/predicted.faa 
+# Current dir:     /home/ephraim
+# Date:            Sun May  3 19:13:23 2026
+# [ok]
