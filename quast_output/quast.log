@@ -1,0 +1,81 @@
+/home/ephraim/miniconda3/envs/quast_5.3/bin/quast.py isolate_filtered_may.fasta isolate_filtered.fasta careful_filtered.fasta -o quast_output_may/
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39 (linux_64)
+  Python version: 3.13.12
+  CPUs number: 12
+
+Started: 2026-05-03 17:36:08
+
+Logging to /home/ephraim/quast_output_may/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+NOTICE: Maximum number of threads is set to 3 (use --threads option to set it manually)
+
+CWD: /home/ephraim
+Main parameters: 
+  MODE: default, threads: 3, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  1  isolate_filtered_may.fasta ==> isolate_filtered_may
+  2  isolate_filtered.fasta ==> isolate_filtered
+  3  careful_filtered.fasta ==> careful_filtered
+
+2026-05-03 17:36:09
+Running Basic statistics processor...
+  Contig files: 
+    1  isolate_filtered_may
+    2  isolate_filtered
+    3  careful_filtered
+  Calculating N50 and L50...
+    1  isolate_filtered_may, N50 = 404174, L50 = 3, auN = 381730.4, Total length = 3058408, GC % = 46.12, # N's per 100 kbp =  19.62
+    2  isolate_filtered, N50 = 404174, L50 = 3, auN = 381767.9, Total length = 3057896, GC % = 46.12, # N's per 100 kbp =  19.62
+    3  careful_filtered, N50 = 403891, L50 = 3, auN = 381709.1, Total length = 3058071, GC % = 46.12, # N's per 100 kbp =  18.93
+  Drawing Nx plot...
+    saved to /home/ephraim/quast_output_may/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/ephraim/quast_output_may/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/ephraim/quast_output_may/basic_stats/GC_content_plot.pdf
+  Drawing isolate_filtered_may GC content plot...
+    saved to /home/ephraim/quast_output_may/basic_stats/isolate_filtered_may_GC_content_plot.pdf
+  Drawing isolate_filtered GC content plot...
+    saved to /home/ephraim/quast_output_may/basic_stats/isolate_filtered_GC_content_plot.pdf
+  Drawing careful_filtered GC content plot...
+    saved to /home/ephraim/quast_output_may/basic_stats/careful_filtered_GC_content_plot.pdf
+  Drawing Coverage histogram (bin size: 4x)...
+    saved to /home/ephraim/quast_output_may/basic_stats/coverage_histogram.pdf
+  Drawing isolate_filtered_may coverage histogram (bin size: 4x)...
+    saved to /home/ephraim/quast_output_may/basic_stats/isolate_filtered_may_coverage_histogram.pdf
+  Drawing isolate_filtered coverage histogram (bin size: 3x)...
+    saved to /home/ephraim/quast_output_may/basic_stats/isolate_filtered_coverage_histogram.pdf
+  Drawing careful_filtered coverage histogram (bin size: 4x)...
+    saved to /home/ephraim/quast_output_may/basic_stats/careful_filtered_coverage_histogram.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2026-05-03 17:36:11
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2026-05-03 17:36:12
+RESULTS:
+  Text versions of total report are saved to /home/ephraim/quast_output_may/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/ephraim/quast_output_may/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/ephraim/quast_output_may/report.html
+  PDF version (tables and plots) is saved to /home/ephraim/quast_output_may/report.pdf
+  Icarus (contig browser) is saved to /home/ephraim/quast_output_may/icarus.html
+  Log is saved to /home/ephraim/quast_output_may/quast.log
+
+Finished: 2026-05-03 17:36:12
+Elapsed time: 0:00:03.653955
+NOTICEs: 3; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
