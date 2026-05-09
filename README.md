@@ -16,7 +16,7 @@ raw data from the following tools are all included:
 >PlasmidHunter v 1.4.5 (Database: May. 2024 release)\
 >mummer2circos v1.4.2 & Circos v0.69-8\
 >antiSMASH version 8.0.4\
->gutSMASH version 2.0.1\\
+>gutSMASH version 2.0.1\
 >
 files from Trimmomatic  will **NOT** be uploaded
 as it is too large, compressed or otherwise
