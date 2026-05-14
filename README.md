@@ -3,7 +3,7 @@
 The raw Illumina paired-end sequencing reads are accessible under SRA accession number [SRR35991900](https://www.ncbi.nlm.nih.gov/sra/SRR35991900)
 this repository contains the raw data for the de novo assembly of the aforementioned microbe for your perusal\
 fna, ffn, faa, tsv, csv files are all uploaded unless stated otherwise within each README\
-blast hits from ncbi are also included\
+files from `assembly_validation`, `safety_analysis`, and `functional_analysis` only contain that of `--isolate -s` assembly
 raw data from the following tools are all included:
 >eggNOG-mapper v2.1.12 (Database: eggNOG v5.0.2, Mar. 2021 release)\
 >PlasmidFinder v 2.1.6 (Database: plasmidfinder_db v 2.2.0 , Nov. 2024 release)\
