@@ -1,6 +1,7 @@
 # *paracasei*-SCA72564
 *de novo* assembly of the *L. paracasei* strain SCA72564\
-this contains the raw data for the de novo assembly of the aforementioned microbe for your perusal\
+The raw Illumina paired-end sequencing reads are accessible under SRA accession number [SRR35991900](https://www.ncbi.nlm.nih.gov/sra/SRR35991900)
+this repository contains the raw data for the de novo assembly of the aforementioned microbe for your perusal\
 fna, ffn, faa, tsv, csv files are all uploaded unless stated otherwise within each README\
 blast hits from ncbi are also included\
 raw data from the following tools are all included:
