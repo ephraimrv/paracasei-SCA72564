@@ -4,6 +4,7 @@ this contains the raw data for the de novo assembly of the aforementioned microb
 fna, ffn, faa, tsv, csv files are all uploaded unless stated otherwise within each README\
 blast hits from ncbi are also included\
 raw data from the following tools are all included:
+>eggNOG-mapper v2.1.12 (Database: eggNOG v5.0.2, Mar. 2021 release)\
 >PlasmidFinder v 2.1.6 (Database: plasmidfinder_db v 2.2.0 , Nov. 2024 release)\
 >Phigaro v2.4.0 (Database: Jan. 2024 release)\
 >ISEScan v1.7.2.3 (Database: Apr. 2021 release)\
