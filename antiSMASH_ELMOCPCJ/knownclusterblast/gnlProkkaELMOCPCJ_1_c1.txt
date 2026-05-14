@@ -1,0 +1,21 @@
+ClusterBlast scores for gnlProkkaELMOCPCJ_1
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg1_455	471354	472692	+		
+ctg1_456	472768	473071	+		
+ctg1_457	473070	473934	+		
+ctg1_458	473967	474660	+		
+ctg1_459	474656	475178	+		
+ctg1_460	476126	476381	+		
+ctg1_461	476385	476586	+		
+ctg1_462	477101	477587	+		
+ctg1_463	477660	478410	+		
+ctg1_464	478554	480042	-		
+ctg1_465	480197	480710	+		
+ctg1_466	480752	481379	+		
+
+
+Significant hits: 
+
+
+Details:
