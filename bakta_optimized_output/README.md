@@ -1,1 +1,1 @@
-these are structural annonations to the the --isolate -s assembly
+these are structural annonations of the --isolate -s assembly
