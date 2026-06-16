@@ -100,9 +100,12 @@ minimum Phred score of 20.
 If you use data or scripts from this repository, please cite:
 
 > Vallente, J.E.R. (2026). *paracasei-SCA72564: Data and analysis files for
-> the de novo genome assembly and functional characterization of
-> Lacticaseibacillus paracasei SCA72564* (Version 1.0.0). Zenodo.
-> https://doi.org/10.5281/zenodo.XXXXXXX
+> the de novo genome assembly and \
+> functional characterization of
+> Lacticaseibacillus paracasei SCA72564* \
+> (Version 1.0.0). Zenodo.
+> [![DOI](https://zenodo.org/badge/1224423767.svg)](https://doi.org/10.5281/zenodo.20723035)
+
 
 *(Replace the placeholder DOI with the Zenodo DOI once the repository release
 is archived. See [zenodo.org](https://zenodo.org) — link your GitHub account
