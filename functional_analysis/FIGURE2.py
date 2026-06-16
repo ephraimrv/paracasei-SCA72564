@@ -12,7 +12,7 @@ Output files:
     SCA72564_Figure2_functional_enrichment.png   — 300 dpi PNG for draft review
 
 Usage:
-    python3 figure2_functional_enrichment.py
+    python3 FIGURE2.py
 
 Todo:
     Confirm PANEL_B_DATA and PANEL_C_DATA values flagged with [VERIFY] comments
@@ -24,7 +24,7 @@ References:
     Ilocos Norte, Philippines.
 
     eggNOG-mapper v2.1.12; KEGG (Kanehisa, 2000); CAZy (Drula et al., 2022).
-    Raw outputs archived at: https://github.com/ephraimrv/<repo>
+    Raw outputs archived at: https://github.com/ephraimrv/paracasei-SCA72564/tree/main/functional_analysis
 """
 
 __author__ = "Jan Ephraim R. Vallente"
