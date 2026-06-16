@@ -29,7 +29,7 @@ References:
 
 __author__ = "Jan Ephraim R. Vallente"
 __email__ = "ephrvallente@gmail.com"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __license__ = "MIT"
 __status__ = "Final"
 
@@ -46,8 +46,8 @@ FIGURE_WIDTH: float = 7.0
 FIGURE_HEIGHT: float = 9.0
 DPI_TIFF: int = 600  # minimum for most journals; use 1200 for line art only
 DPI_PNG: int = 300
-FONT_FAMILY: str = "monospace"
-FONT_MONOSPACE: str = "JetBrainsMonoNL NFM"
+FONT_FAMILY: str = "sans-serif"
+FONT_SANS_SERIF: str = "Helvetica"
 BASE_FONT_SIZE: int = 9
 
 # Bubble area scaling: s = BUBBLE_BASE + sqrt(count) * BUBBLE_SCALE
@@ -141,16 +141,20 @@ PANEL_DATA: list[dict] = [PANEL_A_DATA, PANEL_B_DATA, PANEL_C_DATA]
 
 # ─── figure caption (for reference; not rendered in the figure itself) ────────
 FIGURE_CAPTION: str = (
-    "Figure 2. Functional genomic enrichment of L. paracasei SCA72564 relative to "
-    "the species-level baseline. Z-scores were computed as Z = (x − μ) / σ, where x "
-    "is the gene count per category in SCA72564, μ the mean count across reference "
-    "L. paracasei genomes, and σ the standard deviation. "
-    "(A) COG functional category distribution. "
-    "(B) KEGG metabolic pathway group enrichment. "
-    "(C) Representative CAZy family enrichment. "
-    "Bubble area is proportional to the absolute gene count per category. "
-    "Orange bubbles indicate enrichment (Z > 0); red bubbles indicate depletion (Z < 0). "
-    "The dashed vertical line marks Z = 0."
+    "Figure 2. Functional genomic enrichment of Lacticaseibacillus paracasei"
+    "SCA72564 relative to the species-level baseline. Z-scores were computed as"
+    "Z = (x − μ) / σ, where x is the gene count per category in SCA72564, μ the"
+    "mean count across reference L. paracasei genomes, and σ the corresponding"
+    "standard deviation. (A) COG functional category distribution, highlighting"
+    "enrichment in extracellular structure biogenesis (W) and carbohydrate"
+    "transport and metabolism (G). (B) KEGG metabolic pathway group enrichment,"
+    "showing overrepresentation of membrane transport and glycan biosynthesis"
+    "pathways. (C) Representative CAZy subfamily enrichment, illustrating the"
+    "genomic bias toward phosphorolytic β-glucoside catabolism (GH94) and"
+    "exopolysaccharide glycosyltransferase activity (GT36, GT84). Bubble area is"
+    "proportional to the absolute gene count per category. Orange shading indicates"
+    "enrichment (Z > 0); red indicates depletion (Z < 0) relative to the species"
+    "baseline. Dashed vertical line marks Z = 0."
 )
 
 
@@ -226,7 +230,7 @@ def draw_panel(
     colours = [category_color(v, cmap, z_max) for v in values]
 
     # Strip panel background fill for transparent output
-    ax.set_facecolor("none")
+    # ax.set_facecolor("none")
 
     # --- reference line at Z = 0 ---
     ax.axvline(0, color="black", linewidth=0.9, linestyle="--", alpha=0.50, zorder=1)
@@ -275,8 +279,8 @@ def draw_panel(
 
     # --- bold panel letter (top-left corner) ---
     ax.text(
-        -0.08,
-        1.02,
+        -0.52,  # <-- abscissa of panel letter
+        1.02,  # ordinate of panel letter
         panel_letter,
         transform=ax.transAxes,
         fontsize=BASE_FONT_SIZE + 1,
@@ -314,24 +318,25 @@ def add_legend(ax: plt.Axes) -> None:
             color="grey",
             edgecolors="black",
             linewidths=0.4,
-            label=f"n = {cnt} genes",
+            label=f"n = {cnt}",
         )
         for s, cnt in zip(legend_sizes, legend_counts)
     ]
-    ax.legend(
+    leg = ax.legend(
         handles=handles,
-        title="Gene count",
+        title="Gene count (n)",
         title_fontsize=BASE_FONT_SIZE - 1,
         fontsize=BASE_FONT_SIZE - 1,
         loc="center right",
         frameon=True,
         framealpha=0.92,
         edgecolor="grey",
-        facecolor="none",  # Force legend frame to be transparent/clear
-        handletextpad=0.4,
-        labelspacing=0.6,
-        borderpad=0.7,
+        labelspacing=1.1,  # Increases vertical space between rows (try 1.5 - 2.0)
+        handletextpad=1.1,  # Pushes text away from the bubble
+        borderpad=1.0,  # Adds padding between the legend content and the border
+        handlelength=1.0,  # Gives the bubble handle more "width" to sit in
     )
+    return leg
 
 
 # ─── main entry point ────────────────────────────────────────────────────────
@@ -353,13 +358,18 @@ def generate_figure(
         None
 
     Raises:
-        OSError: If matplotlib cannot locate the configured font, change
-            ``FONT_MONOSPACE`` to ``"Courier New"`` or ``"DejaVu Sans Mono"``
-            as a cross-platform fallback.
+        None
+
+    Note:
+        Font resolution follows the fallback chain defined by ``FONT_SANS_SERIF``:
+        Helvetica (macOS system font) → Arial (Windows) → DejaVu Sans (bundled
+        with matplotlib; always available). If the primary font is absent,
+        matplotlib issues a ``UserWarning`` and silently substitutes the next
+        available font in the chain. The script will not crash.
     """
     # --- global typography ---
     plt.rcParams["font.family"] = FONT_FAMILY
-    plt.rcParams["font.monospace"] = [FONT_MONOSPACE]
+    plt.rcParams["font.sans-serif"] = [FONT_SANS_SERIF, "Arial", "DejaVu Sans"]
     plt.rcParams["font.size"] = BASE_FONT_SIZE
     plt.rcParams["axes.linewidth"] = 0.8
 
@@ -380,7 +390,7 @@ def generate_figure(
     )
 
     # Strip figure canvas background fill for transparent output
-    fig.patch.set_facecolor("none")
+    # fig.patch.set_facecolor("none")
 
     for idx, (ax, data, letter) in enumerate(zip(axes, PANEL_DATA, panel_letters)):
         draw_panel(
@@ -391,9 +401,12 @@ def generate_figure(
             is_bottom=(idx == len(PANEL_DATA) - 1),
         )
 
-    add_legend(axes[1])  # anchor legend inside Panel B (most empty space)
+    leg = add_legend(axes[1])  # anchor legend inside Panel B (most empty space)
 
     # --- save TIFF (submission) ---
+    # Explicitly set legend frame to white/solid for TIFF
+    leg.get_frame().set_facecolor("white")
+    leg.get_frame().set_alpha(1.0)
     tiff_path = f"{output_stem}.tiff"
     fig.savefig(tiff_path, format="tiff", dpi=DPI_TIFF, bbox_inches="tight")
     print(f"Saved: {tiff_path}  ({DPI_TIFF} dpi)")
@@ -401,6 +414,8 @@ def generate_figure(
     # --- save PNG (draft review — transparent background) ---
     # Transparent background floats cleanly in Word/Slides without a white box.
     # The TIFF stays white as journals expect for print.
+    leg.get_frame().set_facecolor("none")
+
     png_path = f"{output_stem}.png"
     fig.savefig(
         png_path, format="png", dpi=DPI_PNG, bbox_inches="tight", transparent=True
