@@ -1,5 +1,7 @@
 # *Lacticaseibacillus paracasei* subsp. *paracasei* SCA72564
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20723035.svg)](https://doi.org/10.5281/zenodo.20723035)
+
 This repository contains the raw data outputs and analysis files supporting the
 *de novo* genome assembly and functional genomic characterization of
 *L. paracasei* strain SCA72564, isolated from *Dioscorea esculenta* tubers in
@@ -104,7 +106,7 @@ If you use data or scripts from this repository, please cite:
 > functional characterization of
 > Lacticaseibacillus paracasei SCA72564* \
 > (Version 1.0.0). Zenodo.
-> [![DOI](https://zenodo.org/badge/1224423767.svg)](https://doi.org/10.5281/zenodo.20723035)
+> https://doi.org/10.5281/zenodo.20723035
 
 
 *(Replace the placeholder DOI with the Zenodo DOI once the repository release
